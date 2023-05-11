@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 
-import sys
-
 if __name__ == "__main__":
+
+    import sys
+
     args = sys.argv[1:]
     count = len(args)
-
     if count == 0:
         print("Number of argument(s): 0.")
     elif count == 1:
