@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Define classes for a singly-linked list."""
 
+
 class Node:
     """Represent a node in a singly-linked list."""
 
@@ -61,18 +62,18 @@ class SinglyLinkedList:
             new.next_node = self.__head
             self.__head = new
         else:
-            slt = self.__head
-            while (slt.next_node is not None and
-                    slt.next_node.data < value):
-                slt = slt.next_node
-            new.next_node = slt.next_node
-            slt.next_node = new
+            pec = self.__head
+            while (pec.next_node is not None and
+                    pec.next_node.data < value):
+                pec = pec.next_node
+            new.next_node = pec.next_node
+            pec.next_node = new
 
     def __str__(self):
         """Define the print() representation of a SinglyLinkedList."""
         values = []
-        slt = self.__head
-        while slt is not None:
-            values.append(str(slt.data))
-            slt = slt.next_node
+        pec = self.__head
+        while pec is not None:
+            values.append(str(pec.data))
+            pec = pec.next_node
         return ('\n'.join(values))
