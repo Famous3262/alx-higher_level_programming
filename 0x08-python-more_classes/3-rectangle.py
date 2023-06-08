@@ -45,17 +45,12 @@ class Rectangle:
             return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
-        """Return the printable representation of the Rectangle.
-
-        Represents the rectangle with the # character.
-        """
         if self.__width == 0 or self.__height == 0:
             return ("")
 
-        else:
-            rectangle = []
-            for i in range(self.__height):
-                [rectangle.append('#') for j in range(self.__width)]
-                if i != self.__height - 1:
-                    rectangle.append("\n")
-            return ("".join(rectangle))
+        rect = []
+        for i in range(self.__height):
+            [rect.append('#') for j in range(self.__width)]
+            if i != self.__height - 1:
+                rect.append("\n")
+            return ("".join(rect))
