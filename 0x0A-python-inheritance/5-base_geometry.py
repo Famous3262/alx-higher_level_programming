@@ -3,8 +3,5 @@
 
 
 class BaseGeometry:
-    """
-    An empty class that can be used as a base class 
-    for geometry-related classes.
-    """
+    """Represent base geometry."""
     pass
