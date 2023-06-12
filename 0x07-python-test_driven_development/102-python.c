@@ -1,4 +1,6 @@
-#include "Python.h"
+#include <Python.h>
+#include <listobject.h>
+#include <object.h>
 
 /**
  * print_python_string - Function that prints Python strings information
@@ -6,7 +8,7 @@
  */
 void print_python_string(PyObject *p)
 {
-	long int len;
+	long int length;
 
 	fflush(stdout);
 
@@ -17,12 +19,12 @@ void print_python_string(PyObject *p)
 		return;
 	}
 
-	len = ((PyASCIIObject *)(p))->len;
+	length = ((PyASCIIObject *)(p))->length;
 
 	if (PyUnicode_IS_COMPACT_ASCII(p))
 		printf("  type: compact ascii\n");
 	else
 		printf("  type: compact unicode object\n");
-	printf("  length: %ld\n", len);
-	printf("  value: %ls\n", PyUnicode_AsWideCharString(p, &len));
+	printf("  length: %ld\n", length);
+	printf("  value: %ls\n", PyUnicode_AsWideCharString(p, &length));
 }
