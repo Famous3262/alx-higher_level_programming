@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Defines a JSON file function."""
 import json
 
 

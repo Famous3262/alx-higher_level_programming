@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Function that defines a class Student."""
 
 
 class Student:
