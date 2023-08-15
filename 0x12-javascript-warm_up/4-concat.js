@@ -3,7 +3,7 @@
 const [arg1, arg2] = process.argv.slice(2);
 
 if (!arg1 || !arg2) {
-	console.log('undefined');
+  console.log('undefined');
 } else {
-	console.log(`${arg1} is ${arg2}`);
+  console.log(`${arg1} is ${arg2}`);
 }
