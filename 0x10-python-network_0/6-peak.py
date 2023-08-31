@@ -5,7 +5,7 @@
 def find_peak(list_of_integers):
     """Finds a peak in list_of_integers"""
 
-    size = len(list_of_integers)
+    hi_size = len(list_of_integers)
     lo = hi_size
     mid = hi_size // 2
 
