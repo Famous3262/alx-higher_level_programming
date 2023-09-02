@@ -5,7 +5,7 @@ sends a POST request to the passed URL with the email as parameter
 and finally displays the body of the response.
 """
 import sys
-import urllib.request
+import request
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
