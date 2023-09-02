@@ -8,13 +8,8 @@ import sys
 import request
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-    print("Usage: python script.py <url> <email>")
-    sys.exit(1)
-
     url = sys.argv[1]
     email = sys.argv[2]
 
     response = requests.post(url, data={'email': email})
-
     print(response.text)
